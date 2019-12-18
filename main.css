@@ -35,10 +35,6 @@ nav {
     z-index: 10;
 }
   
-/* .hidden-nav{
-    display: none;
-} */
-
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -67,7 +63,7 @@ ul.topnav li{
     float: right;
 }
 
-/* Sections - Fix this so that local links go to right scroll level */
+/* Sections - Styles */
   
 section {
     min-height: 200px;
@@ -76,11 +72,16 @@ section {
 }
   
 header {
+    color:#bbb;
     border: 1px solid black;
     width: 75%;
     margin: 0 auto;
     padding: 200px 100px;
-    /* Add a background picture or color */
+    background: url(Images/Night-Lights-West.PNG) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 section:nth-child(even) {
