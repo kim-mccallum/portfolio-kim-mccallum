@@ -14,7 +14,7 @@ body {
   
 nav, footer {
     padding: 1% 0;
-    background-color: #aaa;
+    background-color: #8c8c8c;
 }
   
 nav {
@@ -24,11 +24,6 @@ nav {
     right: 0;
     z-index: 10;
 }
-
-.my-name {
-    display: none;
-}
-
   
 header {
     padding: 12% 0;
@@ -58,44 +53,46 @@ a > .fa{
  
 /* Add media queries to adapt for larger screens */
 
-/* .my-name {
+.my-name {
     position: absolute;
     left:60px; 
-    margin-top:20px;
+    padding: 14px 16px;
+    color: white;
     border: 1px solid black;
-} */
+}
 
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
   }
   
-  ul.topnav li {float: left;}
-  
-  ul.topnav li a {
+ul.topnav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  ul.topnav li a:hover:not(.active) {background-color: #111;}
-  
-  ul.topnav li a.active {background-color: rgb(222, 250, 67);}
-  
-  ul.topnav li.right {
-      float: right;
 }
   
-@media screen and (max-width: 600px) {
-    ul.topnav li.right, ul.topnav li {
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: rgb(222, 250, 67);}
+
+ul.topnav li{
+    float: right;
+}
+
+@media screen and (max-width: 775px) {
+    ul.topnav, ul.topnav li {
         float: none;
     }
     main{
         margin-top: 280px;
     }
+    .my-name {
+        display: none;
+    }
   }
+
