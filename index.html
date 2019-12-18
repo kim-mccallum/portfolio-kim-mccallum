@@ -6,19 +6,23 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <script src="https://use.fontawesome.com/313637d50f.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <!-- <link rel="stylesheet" href="main.css"> -->
+    
+    <!-- Add JS and jQuery but maybe move these down later-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>  
+
 </head>
 <body>
-    <nav role="navigation">
+    <nav class="nav-bar" role="navigation">
         <span class="my-name">Kim McCallum</span>
-        <ul class="topnav">
+        <ul class="topnav hidden-nav">
             <li><a href="#Home" class="active">Home</a></li>
             <li><a href="#About">About Me</a></li>
             <li><a href="#Projects">Projects</a></li>
             <li><a href="#Outside">Life Outside</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
-        <button class="menu-btn">Menu</button>
+        <button class="menu-btn" type="submit">Menu</button>
     </nav>
 
     <main role="main">
@@ -37,7 +41,7 @@
             </div>
 
             <div class="profile-pic">
-                <img src="#SomePic" alt="Kim-Profile-Picture">
+                <img src="Images\Kim-Boots-Bald-Mt.jpg" alt="Kim and her dog out on the trail">
             </div>
 
         </section>
@@ -45,29 +49,16 @@
         <section class="project-section" id="Projects">
             <h1>Projects</h1>
             <div class="projects-container">
-                <div>
-                    <h3>Project 1-Title</h3>
-                    <img src="#" alt="Project 1 screenshot">
+                <div class="example-projects">
+                    <h3>Interactive Quiz App</h3>
+                    <img src="#" alt="Interactive forest ecology quiz app">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div>
-                    <h3>Project 2-Title</h3>
-                    <img src="#" alt="Project 2 screenshot">
+                <div class="example-projects">
+                    <h3>Interactive WebMap</h3>
+                    <img src="#" alt="Interactive forest ecology quiz app">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-
-                <div>
-                    <h3>Project 3-Title</h3>
-                    <img src="#" alt="Project 2 screenshot">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div>
-                    <h3>Project 4-Title</h3>
-                    <img src="#" alt="Project 2 screenshot">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
                 
             </div>
          </section>
@@ -81,7 +72,7 @@
             </div>
 
             <div class="fun-pic">
-                <img src="#SomePic" alt="Kim-Fun-Outside">
+                <img src="Images\Chandrashilla.jpg" alt="Kim rock climbing">
             </div>
 
         </section>
@@ -108,7 +99,7 @@
                             <label for="message">Message</label>
                             <textarea name="message" maxlength="500" rows="10" cols="50"></textarea>  
                         </p>
-                        <p class="submit">
+                        <p class="submit-form">
                             <input  type="submit" value="Submit">
                         </p>
                       
