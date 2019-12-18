@@ -111,6 +111,16 @@ section:nth-child(even) {
     border: 1px solid black;
 }
 
+.project{
+    border: 1px solid black;
+}
+
+.project img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
 .hobby-section {
     border: 1px solid black;
     display: flex;
@@ -194,8 +204,8 @@ a > .fa{
         flex-direction: row;
     }
     .projects-container {
-        /* flex-direction: row; */
-        flex-flow: row wrap;      
+        flex-direction: row;
+        /* flex-flow: row wrap;       */
     }
     .hobby-section{
         flex-direction: row;
