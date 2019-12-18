@@ -6,25 +6,14 @@ body {
     font-family: "Open Sans",
     sans-serif; 
     font-size: 20px;
-    color: black;
+    color: #444;
     text-align: center;
     line-height: 1.5;
     margin: 0;
 }
 
 header {
-    padding: 1% 0;
-    color: white;
-    margin: 0;
-    width:60%;
-    height:40%;
-    background-color: #444;
-        /* VIIRS stable night lights background */
-        background: url(Images/Night-Lights-wide.PNG) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    padding: 12% 0;
 }
 
 a {
@@ -46,6 +35,10 @@ nav {
     z-index: 10;
 }
   
+/* .hidden-nav{
+    display: none;
+} */
+
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -71,8 +64,10 @@ ul.topnav li a:hover:not(.active), .menu-btn {background-color: #111;}
 ul.topnav li a.active {background-color: rgb(222, 250, 67);}
 
 ul.topnav li{
-    float: left;
+    float: right;
 }
+
+/* Sections - Fix this so that local links go to right scroll level */
   
 section {
     min-height: 200px;
@@ -99,14 +94,8 @@ section:nth-child(even) {
     align-items: center;
 }
 
-.bio-text {
-    margin: 2.2em 5.5em;
-    padding: 1.3em 2em;
-}
-
 .profile-pic {
     border: 1px solid black;
-    margin-right: 2em;
 }
 
 .bio-text {
@@ -127,17 +116,6 @@ section:nth-child(even) {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    align-items: center;
-}
-
-.hobby-text{
-    width:50%;
-}
-
-
-
-.fun-pic {
-    border: 1px solid black;
 }
 
 /* Form section */
@@ -189,7 +167,7 @@ a > .fa{
     padding:0.2em .2em;  
     color: black;
 }
- 
+
 /* Add media queries to adapt for larger screens */
 @media screen and (max-width: 775px) {
     ul.topnav, ul.topnav li {
@@ -205,8 +183,7 @@ a > .fa{
 
 @media screen and (min-width: 1020px){
     .my-name {
-        float:right;
-        /* position: absolute; */
+        position: absolute;
         left:60px; 
         padding: 14px 16px;
         color: white;
@@ -223,4 +200,3 @@ a > .fa{
         flex-direction: row;
     }
 }
-

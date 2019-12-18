@@ -12,8 +12,12 @@ function handleMenuItemClick(){
     })
 }
 
-
 $(function () {
-    handleMenuClick();
-    handleMenuItemClick();
+    if ($(window).width() <= 775) {
+      $('.topnav').hide();
+      handleMenuClick();
+      handleMenuItemClick();
+    } else {
+      $('.menu-btn').hide();
+    }
 });
