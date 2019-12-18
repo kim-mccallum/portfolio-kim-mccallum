@@ -18,6 +18,7 @@
             <li><a href="#Outside">Life Outside</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
+        <button class="menu-btn">Menu</button>
     </nav>
 
     <main role="main">
@@ -26,27 +27,95 @@
             <h2>I'm a new fullstack developer, keen on all things geospatial...</h2>
         </header>
 
-        <section id="About">
-            <h1>About Me</h1>
-            <h2>Background & Skills</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, labore dolorem corporis et reiciendis quisquam, vel necessitatibus, maiores repudiandae deleniti minima enim perspiciatis dolores? At delectus facere non facilis nemo!</p>
-            <a href="#resume">View my resume</a>
+        <section class="about" id="About">
+
+            <div class="bio-text">
+                <h1>About Me</h1>
+                <h2>Background & Skills</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, labore dolorem corporis et reiciendis quisquam, vel necessitatibus, maiores repudiandae deleniti minima enim perspiciatis dolores? At delectus facere non facilis nemo!</p>
+                <a href="#resume">View my resume</a>
+            </div>
+
+            <div class="profile-pic">
+                <img src="#SomePic" alt="Kim-Profile-Picture">
+            </div>
+
         </section>
 
-        <section id="Projects">
+        <section class="project-section" id="Projects">
             <h1>Projects</h1>
-            <div>Project 1</div>
-            <div>Project 2</div>
+            <div class="projects-container">
+                <div>
+                    <h3>Project 1-Title</h3>
+                    <img src="#" alt="Project 1 screenshot">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <h3>Project 2-Title</h3>
+                    <img src="#" alt="Project 2 screenshot">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div>
+                    <h3>Project 3-Title</h3>
+                    <img src="#" alt="Project 2 screenshot">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div>
+                    <h3>Project 4-Title</h3>
+                    <img src="#" alt="Project 2 screenshot">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                
+            </div>
          </section>
 
-        <section id="Outside">
-            <h1>Life Outside</h1>
-            <h2>When I'm not coding, I play outside.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at labore accusamus iste harum. </p>
+        <section class="hobby-section" id="Outside">
+
+            <div class="hobby-text">
+                <h1>Life Outside</h1>
+                <h2>When I'm not coding, I play outside.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at labore accusamus iste harum. </p>
+            </div>
+
+            <div class="fun-pic">
+                <img src="#SomePic" alt="Kim-Fun-Outside">
+            </div>
+
         </section>
         
         <section id="Contact">
             <h1>Get in Contact</h1>
+            <div class="form-container">
+                <form action="#Email">
+                    <fieldset>
+                      <legend>Send me an email:</legend>
+                        <p>
+                            <label for="name">Name</label>
+                            <input id="name" type="text" />                          
+                        </p>
+                        <p>
+                            <label for="subject">Subject</label>
+                            <input id="subject" type="text" />
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input id="email" type="email"/>
+                        </p>
+                        <p>
+                            <label for="message">Message</label>
+                            <textarea name="message" maxlength="500" rows="10" cols="50"></textarea>  
+                        </p>
+                        <p class="submit">
+                            <input  type="submit" value="Submit">
+                        </p>
+                      
+
+                    </fieldset>
+                  </form>
+            </div>
         </section>
     </main>
     <footer role="content-info">
