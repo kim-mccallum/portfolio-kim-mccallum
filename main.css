@@ -3,8 +3,7 @@
 }
   
 body {
-    font-family: "Open Sans",
-    sans-serif; 
+    font-family: "Open Sans",    sans-serif; 
     font-size: 20px;
     color: #444;
     text-align: center;
@@ -68,10 +67,9 @@ ul.topnav li{
 }
 
 /* Sections - Styles */
-  
 section {
-    min-height: 200px;
-    padding: 6% 0;
+    min-height: 400px;
+    padding: 0;
     background-color: #bbb;
 }
   
@@ -88,13 +86,11 @@ header {
     background-size: cover;
 }
 
-
-
 section:nth-child(even) {
     background-color: #ddd;
 }
 
-.about {
+.about-section, .project-section, .contact-section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -109,13 +105,21 @@ section:nth-child(even) {
 
 .projects-container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-evenly;
-    align-items: center;  
-    border: 1px solid black;
+    align-items: stretch;
+    /* border: 1px solid black; */
+    flex-wrap: wrap;
 }
 
-.project{
+.project {
+    display: inline-block;
+    max-width: 460px;
+    height: 100%;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* max-width: 30%; */
+    margin: 5px;
     padding: 1.2em 1em;
     border: 1px solid black;
     background-color: white;
@@ -130,22 +134,29 @@ section:nth-child(even) {
 }
 
 .project p{
-    max-width: 40%; 
+    max-width: 90%; 
     padding:0;
-    margin: 1.2em auto;
+    margin: 0.2em auto;
 }
 
 .project a {
     display: block;
 }
 
+/* Hobby section (life outside) */
 .hobby-section {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 2em;
 }
+
+.fun-pic {
+    /* border: 1px solid black; */
+    margin-right: 1 em 1.2em;
+}
+
 
 /* Form section */
 .form-container{
@@ -184,7 +195,6 @@ input{
 
 fieldset{
     border: 1px solid black;
-    width: 20em
 }
 
 legend{
@@ -194,11 +204,12 @@ legend{
     padding: 2px 6px
 }
 
+
 /* Footer links */
 a > .fa{
     font-size: 30px;
     text-decoration: none;  
-    padding:0.2em .2em;  
+    padding: .2em 1.5em;  
     color: black;
 }
 
@@ -221,17 +232,17 @@ a > .fa{
         margin-right: 20px;
         color: white;
         /* border: 1px solid black; */
+        padding-right:2em;
     }
     header {
         padding: 200px 100px;
     }
-    .about {
+    .about-section {
         flex-direction: row;
     }
-    .projects-container {
-        /* flex-direction: row; */
+    /* .projects-container {
         flex-flow: row wrap;      
-    }
+    } */
     .hobby-section{
         flex-direction: row;
     }
