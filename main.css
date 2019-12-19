@@ -29,9 +29,9 @@ nav, footer {
 nav {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
+    /* Set this to whatever the main is? */
+    margin-bottom: 100px;
+    width: 100%;
 }
 
 .my-name {
@@ -95,21 +95,19 @@ section:nth-child(even) {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2em;
+    border: 1px solid red;
 }
 
 .profile-pic {
-    /* border: 1px solid black; */
-    margin-right: 1 em 1.2em;
+    padding-right: 40px;
 }
 
 .projects-container {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-evenly;
     align-items: stretch;
-    /* border: 1px solid black; */
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .project {
@@ -117,8 +115,6 @@ section:nth-child(even) {
     max-width: 460px;
     height: 100%;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* max-width: 30%; */
     margin: 5px;
     padding: 1.2em 1em;
     border: 1px solid black;
@@ -157,11 +153,15 @@ section:nth-child(even) {
     margin-right: 1 em 1.2em;
 }
 
-
 /* Form section */
 .form-container{
     display:flex;
     justify-content: center;
+    width: 100%;
+}
+
+.contact-form {
+  width: 100%;
 }
 
 fieldset{
@@ -170,11 +170,8 @@ fieldset{
 }
 
 label {
-    width: 4em;
     float: left;
     text-align: right;
-    margin-right: 0.5em;
-    display: block
 }
 
 .submit input{
@@ -194,7 +191,7 @@ input{
 }
 
 fieldset{
-    border: 1px solid black;
+    margin: 0 auto;
 }
 
 legend{
@@ -246,4 +243,7 @@ a > .fa{
     .hobby-section{
         flex-direction: row;
     }
+    .form-container{
+        width: 40%;
+    }  
 }

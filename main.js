@@ -12,7 +12,7 @@ function handleMenuItemClick(){
     })
 }
 
-$(function () {
+$(function() {
     if ($(window).width() <= 775) {
       $('.topnav').hide();
       handleMenuClick();
@@ -21,3 +21,12 @@ $(function () {
       $('.menu-btn').hide();
     }
 });
+
+//New plan! 
+//Set up CSS so default view is mobile - just MENU button. Use media query to set up open layout for wide
+
+// event listener and handler on the menu button - .toggleClass() or use jQuery to change CSS .css()
+// every time the button is clicked - determine current state
+// Then do the opposite 
+
+// Create another function to change the color of the active link
