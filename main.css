@@ -103,12 +103,13 @@ section:nth-child(even) {
     background-color: #ddd;
 }
 
-.about-section, .project-section, .contact-section {
+
+.about-section, .project-section, .hobby-section, .contact-section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid red;
+    padding: 150px 20px;
 }
 
 .profile-pic {
@@ -153,20 +154,15 @@ section:nth-child(even) {
 }
 
 /* Hobby section (life outside) */
-.hobby-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 2em;
-}
-
 .fun-pic {
     /* border: 1px solid black; */
     margin-right: 1 em 1.2em;
 }
 
 /* Form section */
+.contact-section {
+    padding-bottom: 40px;
+}
 .form-container{
     display:flex;
     justify-content: center;
