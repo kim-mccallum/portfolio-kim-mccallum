@@ -3,7 +3,7 @@ function handleMenuIconClick(){
     //listen for click on burger icon
     // show main nav
     $('.navbar-toggle').on('click', function(event){
-        $('.main-nav').show();
+        $('.main-nav').toggle();
     })
 }
 
