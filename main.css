@@ -10,7 +10,8 @@ body {
     /* font-family: 'PT Sans Narrow', sans-serif; */
     /* font-family: 'Karla', sans-serif; */
     font-size: 20px;
-    color: #363636;
+    /* color: #363636; */
+    color: #303123;
     text-align: center;
     line-height: 1.5;
     margin: 0;
@@ -31,7 +32,8 @@ header{
 /* Nav bar items */
 nav, footer {
     padding: 1% 0;
-    background-color: #8c8c8c;
+    /* background-color: #8c8c8c; */
+    background-color: #babb9b;
 }
 
 /* NAVBAR */
@@ -52,7 +54,8 @@ nav, footer {
   
 .nav-links, .logo {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
+    /* color: rgba(255, 255, 255, 0.7); */
+    color: #e3e6b8;
 }
   
 .main-nav li {
@@ -62,6 +65,7 @@ nav, footer {
 /* Something is wrong with how I am positioning the logo*/
 .logo {
     float: left;
+    /* display: inline-block; */
     font-size: 22px;
     margin-top: 10px;
     margin-left: 20px;
@@ -72,15 +76,21 @@ nav, footer {
     top: 10px;
     right: 20px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
+    /* color: rgba(255, 255, 255, 0.8); */
+    color: #e3e6b8;
     font-size: 24px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 
-/* Why don't the nav-links effects work??? */
 .logo:hover, .nav-links:hover {
-    color: rgba(255, 255, 255, 1);
+    /* color: rgba(255, 255, 255, 1); */
+    color: #FDFDED;
+    font-weight: 550;
 }
+
+.navbar-toggle:hover {
+    color: #FDFDED;
+  }
 
 /* Font sizes for Mobile */
 h1 {
@@ -100,11 +110,13 @@ p, a{
 section {
     min-height: 200px;
     padding: 6% 0;
-    background-color: #bbb;
+    /* background-color: #bbb; */
+    background-color: #babb9b;
 }
   
 header {
-    color:#bbb;
+    color:#e7f6dd;
+    /* color:#f2f4df; */
     border: 1px solid black;
     width: 100%;
     margin: 0 auto;
@@ -117,7 +129,8 @@ header {
 }
 
 section:nth-child(even) {
-    background-color: #ddd;
+    /* background-color: #babb9b; */
+    background-color: #e3e6b8;
 }
 
 .about-section, .project-section, .hobby-section, .contact-section {
@@ -131,6 +144,11 @@ section:nth-child(even) {
 .about-section a{
     line-height: 3;
     font-weight: bold;
+    color: #641c7d;
+}
+
+.about-section a:hover{
+    color: #310540;
 }
 
 .about-section p{
@@ -178,6 +196,11 @@ section:nth-child(even) {
     line-height: 3;
     font-weight: bold;
     font-size: 16;
+    color: #641c7d;
+}
+
+.project a:hover{
+    color: #310540;
 }
 
 /* Hobby section (life outside) */
@@ -210,8 +233,12 @@ section:nth-child(even) {
     color: #c7cc70;
 }
 
+.contact-section a:hover{
+    color: #fff654;
+}
+
 .contact-section  {
-    color:#bbb;
+    color:#e3e6b8;
     border: 1px solid black;
     width: 100%;
     margin: 0 auto;
@@ -322,7 +349,8 @@ a > .fa{
 
     /* add to other sections */
     header {
-        color:#bbb;
+        /* color:#bbb; */
+        color: #e3e6b8;
         border: 1px solid black;
         width: 100%;
         margin: 0 auto;
