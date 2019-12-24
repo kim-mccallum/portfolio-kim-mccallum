@@ -318,7 +318,7 @@ a > .fa{
     color: black;
 }
 
-/* @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
     header {
         color: #e3e6b8;
         border: 1px solid black;
@@ -331,6 +331,7 @@ a > .fa{
         -o-background-size: cover;
         background-size: cover;
         background-position:50% 50%;
+        image-rendering: crisp-edges;
         image-rendering: -webkit-optimize-contrast;
     }
     .contact-section  {
@@ -345,9 +346,10 @@ a > .fa{
         -o-background-size: cover;
         background-size: cover;
         background-position:50% 50%;
+        image-rendering: crisp-edges;
         image-rendering: -webkit-optimize-contrast;
     }
-} */
+}
 
 @media screen and (min-width: 768px) {
     /* Navbar */
