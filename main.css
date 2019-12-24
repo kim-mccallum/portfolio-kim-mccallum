@@ -133,6 +133,7 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 section:nth-child(even) {
@@ -255,6 +256,7 @@ section:nth-child(even) {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 /* 
@@ -316,9 +318,8 @@ a > .fa{
     color: black;
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
     header {
-        /* color:#bbb; */
         color: #e3e6b8;
         border: 1px solid black;
         width: 100%;
@@ -329,6 +330,8 @@ a > .fa{
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        background-position:50% 50%;
+        image-rendering: -webkit-optimize-contrast;
     }
     .contact-section  {
         color:#e3e6b8;
@@ -341,8 +344,10 @@ a > .fa{
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        background-position:50% 50%;
+        image-rendering: -webkit-optimize-contrast;
     }
-}
+} */
 
 @media screen and (min-width: 768px) {
     /* Navbar */
