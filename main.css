@@ -251,7 +251,9 @@ section:nth-child(even) {
     width: 100%;
     margin: 0 auto;
     padding: 200px 20px;
-    background: url(Images/Night-Lights-wide.PNG) no-repeat center center fixed; 
+    /* Test for now */
+    /* background: url(Images/Night-Lights-wide.PNG) no-repeat center center fixed;  */
+    background: url(Images/Chandrashilla.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -318,7 +320,7 @@ a > .fa{
     color: black;
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
     header {
         color: #e3e6b8;
         border: 1px solid black;
@@ -349,7 +351,7 @@ a > .fa{
         image-rendering: crisp-edges;
         image-rendering: -webkit-optimize-contrast;
     }
-}
+} */
 
 @media screen and (min-width: 768px) {
     /* Navbar */
