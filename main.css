@@ -253,12 +253,13 @@ section:nth-child(even) {
     padding: 200px 20px;
     /* Test for now */
     /* background: url(Images/Night-Lights-wide.PNG) no-repeat center center fixed;  */
-    background: url(Images/Chandrashilla.jpg) no-repeat center center fixed; 
+    background: url(Images/Chandrashilla.jpg); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     image-rendering: -webkit-optimize-contrast;
+    background-position:50% 50%;
 }
 
 /* 
