@@ -63,7 +63,7 @@ nav, footer {
     text-align: center;
     margin: 15px auto;
 }
-/* Something is wrong with how I am positioning the logo*/
+
 .logo {
     float: left;
     position: relative;
@@ -122,8 +122,9 @@ section {
 }
   
 header {
-    color:#e7f6dd;
-    /* color:#f2f4df; */
+    /* color:#e7f6dd; */
+    color:#f2f4df;
+    /* color: #FDFDED; */
     border: 1px solid black;
     width: 100%;
     margin: 0 auto;
@@ -247,10 +248,11 @@ section:nth-child(even) {
 
 .contact-section  {
     color:#e3e6b8;
+    /* color: #FDFDED; */
     border: 1px solid black;
     width: 100%;
     margin: 0 auto;
-    padding: 200px 20px;
+    padding: 250px 20px;
     background: url(Images/Night-Lights-wide.PNG) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -321,12 +323,14 @@ a > .fa{
 
 @media screen and (max-width: 400px) {
     header {
-        color: #e3e6b8;
+        /* color: #e3e6b8; */
+        color: #FDFDED;
         border: 1px solid black;
         width: 100%;
         margin: 0 auto;
         padding: 200px 20px;
-        background: url(Images/Night-Lights-East-Crop-tiny.png); 
+        /* unfixed background image for very small screens */
+        background: url(Images/Night-Lights-East.png); 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -340,8 +344,8 @@ a > .fa{
         border: 1px solid black;
         width: 100%;
         margin: 0 auto;
-        padding: 200px 20px;
-        background: url(Images/Night-Lights-West-tiny.PNG); 
+        padding: 250px 20px;
+        background: url(Images/Night-Lights-West.PNG); 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
