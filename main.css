@@ -122,20 +122,23 @@ section {
 }
   
 header {
-    /* color:#e7f6dd; */
-    color:#f2f4df;
-    /* color: #FDFDED; */
+    /* color: #e3e6b8; */
+    color: #FDFDED;
     border: 1px solid black;
     width: 100%;
     margin: 0 auto;
     padding: 200px 20px;
-    background: url(Images/Night-Lights-East.PNG) no-repeat center center fixed; 
+    /* unfixed background image for very small screens */
+    background: url(Images/Night-Lights-East.png); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position:50% 50%;
+    image-rendering: crisp-edges;
     image-rendering: -webkit-optimize-contrast;
 }
+
 
 section:nth-child(even) {
     /* background-color: #babb9b; */
@@ -222,10 +225,20 @@ section:nth-child(even) {
 }
 
 /* Form section - Deveop this later*/
-.contact-section {
-    padding-bottom: 40px;
-    display:flex;
-    justify-content: center;
+.contact-section  {
+    color:#e3e6b8;
+    border: 1px solid black;
+    width: 100%;
+    margin: 0 auto;
+    padding: 245px 20px;
+    background: url(Images/Night-Lights-West.PNG); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position:50% 50%;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .contact-section h1{
@@ -244,22 +257,6 @@ section:nth-child(even) {
 
 .contact-section a:hover{
     color: #fff654;
-}
-
-.contact-section  {
-    color:#e3e6b8;
-    /* color: #FDFDED; */
-    border: 1px solid black;
-    width: 100%;
-    margin: 0 auto;
-    padding: 250px 20px;
-    background: url(Images/Night-Lights-wide.PNG) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    image-rendering: -webkit-optimize-contrast;
-    background-position:50% 50%;
 }
 
 /* 
@@ -321,41 +318,6 @@ a > .fa{
     color: black;
 }
 
-@media screen and (max-width: 400px) {
-    header {
-        /* color: #e3e6b8; */
-        color: #FDFDED;
-        border: 1px solid black;
-        width: 100%;
-        margin: 0 auto;
-        padding: 200px 20px;
-        /* unfixed background image for very small screens */
-        background: url(Images/Night-Lights-East.png); 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-position:50% 50%;
-        image-rendering: crisp-edges;
-        image-rendering: -webkit-optimize-contrast;
-    }
-    .contact-section  {
-        color:#e3e6b8;
-        border: 1px solid black;
-        width: 100%;
-        margin: 0 auto;
-        padding: 250px 20px;
-        background: url(Images/Night-Lights-West.PNG); 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-position:50% 50%;
-        image-rendering: crisp-edges;
-        image-rendering: -webkit-optimize-contrast;
-    }
-}
-
 @media screen and (min-width: 768px) {
     /* Navbar */
     .navbar {
@@ -394,7 +356,11 @@ a > .fa{
         color: rgba(255, 255, 255, 1);
     }
 
-    /* add to other sections */
+    .about-section, .project-section, .hobby-section {
+        padding: 100px 60px;
+    }
+
+    /* Fixed, wide images for background */
     header {
         /* color:#bbb; */
         color: #e3e6b8;
@@ -408,6 +374,23 @@ a > .fa{
         -o-background-size: cover;
         background-size: cover;
     }
+
+    .contact-section  {
+        color:#e3e6b8;
+        /* color: #FDFDED; */
+        border: 1px solid black;
+        width: 100%;
+        margin: 0 auto;
+        padding: 250px 20px;
+        background: url(Images/Night-Lights-wide.PNG) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        image-rendering: -webkit-optimize-contrast;
+        background-position:50% 50%;
+    }
+
         /* Font sizes for Widescreen */
     h1 {
         font-size: 48px;
@@ -433,6 +416,22 @@ a > .fa{
     .form-container{
         width: 40%;
     }  
+}
+
+/* Make sure header is visible on widescreens */
+@media screen and (min-width: 1200px) {
+    header {
+        padding: 300px 100px;
+        color: red;
+    }
+
+    .about-section, .project-section, .hobby-section {
+        padding: 150px 100px;
+    }
+
+    .contact-section  {
+        padding: 300px 100px;
+    }
 }
 
 
