@@ -5,10 +5,7 @@
   }
   
 body {
-    /* font-family: "Open Sans",    sans-serif;  */
     font-family: 'Quicksand', sans-serif;
-    /* font-family: 'PT Sans Narrow', sans-serif; */
-    /* font-family: 'Karla', sans-serif; */
     font-size: 20px;
     /* color: #363636; */
     color: #303123;
@@ -33,14 +30,14 @@ header{
 nav, footer {
     padding: 1% 0;
     /* background-color: #8c8c8c; */
-    background-color: #babb9b;
+    background-color: #6d6870;
 }
 
 /* NAVBAR */
 .nav-bar {
     font-size: 18px;
     /* background-color: rgb(44, 41, 41); */
-    background-color: #303123;
+    background-color: #545048;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 10px;
     position: fixed;
@@ -56,7 +53,7 @@ nav, footer {
 .nav-links, .logo {
     text-decoration: none;
     /* color: rgba(255, 255, 255, 0.7); */
-    color: #e3e6b8;
+    color: #e9e4db;
 }
   
 .main-nav li {
@@ -83,7 +80,7 @@ nav, footer {
     right: 20px;
     cursor: pointer;
     /* color: rgba(255, 255, 255, 0.8); */
-    color: #e3e6b8;
+    color: #e9e4db;
     font-size: 24px;
     /* padding-right: 20px; */
 }
@@ -130,7 +127,7 @@ header {
     padding: 200px 20px;
     /* unfixed background image for very small screens */
     /* added no-repeat center center - see if this works for mobile */
-    background: url(Images/Night-Lights-East.png) no-repeat center center; 
+    background: url(Images/NASA-Night-East-tiny.PNG) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -227,13 +224,13 @@ section:nth-child(even) {
 
 /* Form section - Deveop this later*/
 .contact-section  {
-    color:#e3e6b8;
+    color:#e9e4db;
     border: 1px solid black;
     width: 100%;
     margin: 0 auto;
     padding: 245px 20px;
     /* added no-repeat center center - see if this works for mobile */
-    background: url(Images/Night-Lights-West.PNG) no-repeat center center; 
+    background: url(Images/NASA-Night-West-tiny.PNG) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -370,7 +367,7 @@ a > .fa{
         width: 100%;
         margin: 0 auto;
         padding: 200px 20px;
-        background: url(Images/Night-Lights-West.PNG) no-repeat center center fixed; 
+        background: url(Images/NASA-Night-Wide-tiny.PNG) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -383,8 +380,8 @@ a > .fa{
         border: 1px solid black;
         width: 100%;
         margin: 0 auto;
-        padding: 250px 20px;
-        background: url(Images/Night-Lights-wide.PNG) no-repeat center center fixed; 
+        padding: 200px 20px;
+        background: url(Images/NASA-Night-Wide-tiny.PNG) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -412,6 +409,11 @@ a > .fa{
     .about-section {
         flex-direction: row;
     }
+
+    .project {
+        margin: 25px;
+    }
+
     .hobby-section{
         flex-direction: row;
     }
@@ -421,10 +423,9 @@ a > .fa{
 }
 
 /* Make sure header is visible on widescreens */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     header {
         padding: 300px 100px;
-        color: red;
     }
 
     .about-section, .project-section, .hobby-section {
