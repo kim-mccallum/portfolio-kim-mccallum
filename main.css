@@ -18,9 +18,19 @@ a {
     text-decoration: none;
 } 
 
-h2{
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 18px;
     padding:10px;
 }
+
 
 header{
     padding: 12% 0;
@@ -115,7 +125,7 @@ section {
   
 header {
     /* color: #e3e6b8; */
-    color: #FDFDED;
+    color: white;
     border: 1px solid black;
     width: 100%;
     margin: 0 auto;
@@ -246,7 +256,7 @@ section:nth-child(even) {
 .contact-section a{
     font-size: 24px;
     font-weight: bold;
-    color: #c7cc70;
+    color: #f5fb8f;
 }
 
 .contact-section a:hover{
@@ -356,8 +366,8 @@ a > .fa{
 
     /* Fixed, wide images for background */
     header {
-        /* color:#bbb; */
-        color: #e3e6b8;
+        color: white;
+        /* color: #e3e6b8; */
         border: 1px solid black;
         width: 100%;
         margin: 0 auto;
@@ -370,8 +380,8 @@ a > .fa{
     }
 
     .contact-section  {
-        color:#e3e6b8;
-        /* color: #FDFDED; */
+        /* color:#e3e6b8; */
+        color: white;
         border: 1px solid black;
         width: 100%;
         margin: 0 auto;
@@ -391,7 +401,11 @@ a > .fa{
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 28px;
     }
 
     p, a{
